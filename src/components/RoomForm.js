@@ -47,3 +47,5 @@ function RoomForm({onAddRoom}) {
         </div>
     );
 };
+
+export default RoomForm;
