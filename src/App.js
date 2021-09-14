@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import RoomForm from './components/RoomForm';
+import RoomContainer from './components/RoomContainer';
 
 function App() {
   const [showForm, setShowForm] = useState(false);
@@ -40,6 +41,11 @@ function App() {
       <div>
         <button onClick={handleClick}>Add a room</button>
       </div>
+      <RoomContainer
+      rooms={rooms}
+      onDeleteRoom={handleDeleteRoom}
+      onupdateRoom={handleDeleteRoom}
+      />
     </>
   );
 }
